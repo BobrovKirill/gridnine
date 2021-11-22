@@ -1,0 +1,32 @@
+@mixin reset {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  button {
+    border-width: 0;
+    background-color: inherit;
+  }
+}
+* {
+  @include reset;
+  font-size: $fontsize;
+  color: $secondary;
+  font-family: $fontfamily;
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+}
+.main {
+  &__container {
+    position: relative;
+    @media (max-width: $md2) {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,333 @@
+@font-face {
+  font-weight: "400";
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff");
+  font-variant: "normal"; }
+
+@font-face {
+  font-weight: "700";
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff");
+  font-variant: "normal"; }
+
+@font-face {
+  font-weight: "500";
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff");
+  font-variant: "normal"; }
+
+@font-face {
+  font-weight: "600";
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-SemiBold.woff");
+  font-variant: "normal"; }
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 16px;
+  color: #3a3a3a;
+  font-family: "Gilroy", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  * button {
+    border-width: 0;
+    background-color: inherit; }
+
+body {
+  background-color: gray; }
+
+.main__container {
+  position: relative; }
+  @media (max-width: 991px) {
+    .main__container {
+      position: static;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.header {
+  position: sticky;
+  top: 60px;
+  left: 0;
+  width: 300px;
+  background-color: white;
+  z-index: 10; }
+  @media (max-width: 991px) {
+    .header {
+      position: static;
+      width: 100%; } }
+  .header__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 40px 20px; }
+    @media (max-width: 991px) {
+      .header__form {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+  .header__row:not(:last-child) {
+    margin-bottom: 40px; }
+  @media (max-width: 991px) {
+    .header__row {
+      margin-right: 10px; } }
+  .header__title {
+    margin-bottom: 20px; }
+  .header__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .header__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    font-size: 13px;
+    color: gray; }
+    .header__label:not(:last-child) {
+      margin-bottom: 3px; }
+    .header__label input {
+      margin-right: 8px; }
+  .header__label-price input {
+    margin-left: 8px; }
+  .header__label-price:not(:last-child) {
+    margin-bottom: 15px; }
+
+.tickets {
+  background-color: white;
+  margin-left: 300px;
+  position: relative;
+  top: -534px; }
+  @media (max-width: 991px) {
+    .tickets {
+      position: static;
+      width: 100%;
+      margin-left: 0; } }
+  .tickets__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .tickets__list {
+    padding: 40px;
+    width: 100%; }
+  .tickets__ticket:not(:first-child) {
+    margin-top: 40px; }
+  .tickets__btn {
+    width: 250px;
+    margin-bottom: 40px;
+    padding: 5px 25px;
+    background-color: #cecece;
+    color: white;
+    border: solid 2px black; }
+
+.ticket {
+  width: 100%; }
+  .ticket__line {
+    width: 100%;
+    height: 3px;
+    background-color: #4385f3; }
+  .ticket__btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffba3b;
+    color: white;
+    text-align: center; }
+
+.header-ticket {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: #4385f3; }
+  .header-ticket__logo {
+    height: 37px; }
+    .header-ticket__logo img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%;
+      width: 100%; }
+  .header-ticket__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .header-ticket__price {
+    text-align: end;
+    color: white;
+    font-size: 18px; }
+  .header-ticket__text {
+    text-align: end;
+    color: white;
+    font-size: 13px; }
+
+.body-ticket__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10px; }
+  .body-ticket__header::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 95%;
+    background-color: rgba(128, 128, 128, 0.8);
+    position: absolute;
+    bottom: 0; }
+
+.body-ticket__left-header {
+  font-size: 20px; }
+  .body-ticket__left-header span {
+    margin-left: 10px;
+    color: #4385f3; }
+
+.body-ticket__center-header {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #4385f3; }
+
+.body-ticket__right-header {
+  font-size: 20px;
+  text-transform: uppercase; }
+  .body-ticket__right-header span {
+    margin-left: 10px;
+    color: #4385f3; }
+
+.body-ticket__times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px 0 10px; }
+
+.body-ticket__left-times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 32px; }
+  .body-ticket__left-times span {
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: #4385f3; }
+
+.body-ticket__center-times {
+  font-size: 32px; }
+
+.body-ticket__right-times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-size: 32px; }
+  .body-ticket__right-times span {
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #4385f3; }
+
+.body-ticket__transfer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffba3b; }
+  .body-ticket__transfer::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 35%;
+    background-color: gray;
+    margin-left: 15px; }
+  .body-ticket__transfer::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 35%;
+    background-color: gray;
+    margin-right: 15px; }
+
+.body-ticket__footer {
+  width: 100%;
+  padding: 15px;
+  text-align: start;
+  font-size: 20px; }

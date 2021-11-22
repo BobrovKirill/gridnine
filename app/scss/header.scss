@@ -1,0 +1,61 @@
+.header {
+  position: sticky;
+  top: 60px;
+  left: 0;
+  width: 300px;
+  background-color: white;
+  z-index: 10;
+  @media (max-width: $md2) {
+    position: static;
+    width: 100%;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: $md2) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    padding: 40px 20px;
+  }
+  &__row {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: $md2) {
+      margin-right: 10px;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__label {
+    display: flex;
+    flex-direction: row-reverse;
+
+    font-size: 13px;
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+    color: gray;
+    & input {
+      margin-right: 8px;
+    }
+  }
+  &__label-price {
+    & input {
+      margin-left: 8px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}

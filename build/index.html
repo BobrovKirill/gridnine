@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="module" src="js/app.js"> </script>
+    <link rel="stylesheet" href="styles/app.css">
+    <title>bobrovkirill-gridnine</title>
+  </head>
+  <body>
+    <main class="main"> 
+      <div class="main__container container"> 
+        <header class="header"> 
+          <form class="header__form">
+            <div class="header__row"> 
+              <div class="header__title">Сортировать</div>
+              <div class="header__input">
+                <label class="header__label">- по возрастанию цены
+                  <input type="radio" name="sort" value="maxPrice">
+                </label>
+                <label class="header__label">- по убыванию цены
+                  <input type="radio" name="sort" value="minPrice">
+                </label>
+                <label class="header__label">- по времени в пути
+                  <input type="radio" name="sort" value="bestTime">
+                </label>
+              </div>
+            </div>
+            <div class="header__row"> 
+              <div class="header__title">Фильтровать</div>
+              <div class="header__input">
+                <label class="header__label">- 1 пересадка
+                  <input type="checkbox" name="transfer" value="1">
+                </label>
+                <label class="header__label">- без пересадок
+                  <input type="checkbox" name="transfer" value="0">
+                </label>
+              </div>
+            </div>
+            <div class="header__row"> 
+              <div class="header__title">Цена</div>
+              <div class="header__input">
+                <label class="header__label-price" for="afterPrice">От
+                  <input id="afterPrice" type="number" name="afterPrice">
+                </label>
+                <label class="header__label-price" for="beforePrice">До
+                  <input id="beforePrice" type="number" name="beforePrice">
+                </label>
+              </div>
+            </div>
+            <div class="header__row"> 
+              <div class="header__title">Авиакомпании</div>
+              <div class="header__input">
+                <label class="header__label">LOT Polish Airlines
+                  <input type="checkbox" name="aircompany" value="LO">
+                </label>
+                <label class="header__label">Аэрофлот
+                  <input type="checkbox" name="aircompany" value="SU">
+                </label>
+              </div>
+            </div>
+          </form>
+        </header>
+        <section class="tickets"> 
+          <div class="tickets__container"> 
+            <div class="tickets__list"></div>
+            <button class="tickets__btn">Показать еще</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

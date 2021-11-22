@@ -1,0 +1,32 @@
+header.header 
+	form.header__form
+		.header__row 
+			.header__title Сортировать
+			.header__input
+				label.header__label - по возрастанию цены
+					input(type="radio" name="sort" value="maxPrice")
+				label.header__label - по убыванию цены
+					input(type="radio" name="sort" value="minPrice")
+				label.header__label - по времени в пути
+					input(type="radio" name="sort" value="bestTime")
+		.header__row 
+			.header__title Фильтровать
+			.header__input
+				label.header__label - 1 пересадка
+					input(type="checkbox" name="transfer" value="1")
+				label.header__label - без пересадок
+					input(type="checkbox" name="transfer" value="0")
+		.header__row 
+			.header__title Цена
+			.header__input
+				label(for="afterPrice").header__label-price От
+					input(id="afterPrice" type="number" name = "afterPrice")
+				label(for="beforePrice").header__label-price До
+					input(id="beforePrice" type="number" name = "beforePrice")
+		.header__row 
+			.header__title Авиакомпании
+			.header__input
+				label.header__label LOT Polish Airlines
+					input(type="checkbox" name="aircompany" value="LO")
+				label.header__label Аэрофлот
+					input(type="checkbox" name="aircompany" value="SU")
